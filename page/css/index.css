@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-print-color-adjust: exact;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.cv-container {
+  display: flex;
+  width: 800px;
+  height: 1127px;
+  max-height: 1127px;
+  background: white;
+}
+.cv-container .left-container {
+  width: 315px;
+  height: 1127px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cv-container .left-container .left-section-title {
+  background-color: #3a3838;
+  color: white;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cv-container .left-container .content {
+  padding: 0px 2rem;
+}
+.cv-container .left-container .photo {
+  height: 220px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cv-container .left-container .photo img {
+  width: 68%;
+  height: 100%;
+}
+.cv-container .left-container .contact-info {
+  width: 100%;
+}
+.cv-container .left-container .contact-info .addres-section {
+  margin: 10px 0;
+  padding-bottom: 1rem;
+  text-align: justify;
+  position: relative;
+}
+.cv-container .left-container .contact-info .addres-section h5 {
+  margin: 8px 0;
+  font-size: 18px;
+  text-align: center;
+}
+.cv-container .left-container .contact-info .addres-section p {
+  margin-bottom: -15px;
+}
+.cv-container .left-container .contact-info .addres-section span {
+  position: absolute;
+}
+.cv-container .left-container .contact-info ul {
+  list-style: none;
+}
+.cv-container .left-container .contact-info ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.cv-container .left-container .contact-info ul li p {
+  margin-left: 35px;
+}
+.cv-container .left-container .contact-info ul li span {
+  position: absolute;
+  font-size: 24px;
+}
+.cv-container .left-container .education-info .education-description {
+  margin: 15px 0;
+}
+.cv-container .left-container .education-info .education-description span {
+  font-weight: 800;
+}
+.cv-container .left-container .skills-info {
+  width: 100%;
+}
+.cv-container .left-container .skills-info ul {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cv-container .left-container .skills-info ul li {
+  position: relative;
+  margin: 3px 0;
+  text-align: center;
+}
+.cv-container .left-container .skills-info ul li span {
+  position: absolute;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.cv-container .left-container .skills-info ul li:last-child span {
+  font-size: 30px;
+  top: 0;
+  right: -20px;
+}
+.cv-container .rigth-container {
+  width: 485px;
+  height: 1127px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid rgba(179, 179, 179, 0.74);
+}
+.cv-container .rigth-container .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 440px;
+  height: 215px;
+  background-color: #3a3838;
+  color: white;
+}
+.cv-container .rigth-container .header span {
+  margin-top: 1rem;
+  font-size: 34px;
+  border-radius: 50%;
+  background-color: #646464;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1px;
+}
+.cv-container .rigth-container .header h1 {
+  margin: 15px 0;
+  text-decoration: underline;
+}
+.cv-container .rigth-container .sub-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  color: white;
+  width: 440px;
+  height: 45px;
+  background-color: #3a3838;
+}
+.cv-container .rigth-container .me-description {
+  width: 440px;
+}
+.cv-container .rigth-container .me-description p {
+  text-indent: 1.5em;
+  margin-top: 15px;
+  text-align: justify;
+  padding: 0 1.5rem;
+}
+.cv-container .rigth-container .separator {
+  width: 440px;
+  height: 3px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cv-container .rigth-container .separator hr {
+  margin-top: 25px;
+  height: 3px;
+  background-color: rgba(201, 197, 197, 0.74);
+  width: 440px;
+}
+.cv-container .rigth-container .separator span {
+  top: -3px;
+  font-size: 34px;
+  position: absolute;
+  background-color: white;
+}
+.cv-container .rigth-container .portfolio {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=index.css.map */

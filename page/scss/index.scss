@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-print-color-adjust: exact;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.cv-container {
+  display: flex;
+  width: 800px;
+  height: 1127px;
+  max-height: 1127px;
+  background: white;
+
+  .left-container {
+    width: 315px;
+    height: 1127px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .left-section-title {
+      background-color: #3a3838;
+      color: white;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      padding: 0px 2rem;
+    }
+
+    .photo {
+      height: 220px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 68%;
+        height: 100%;
+      }
+    }
+
+    .contact-info {
+      width: 100%;
+
+      .addres-section {
+        margin: 10px 0;
+        padding-bottom: 1rem;
+        text-align: justify;
+        position: relative;
+
+        h5 {
+          margin: 8px 0;
+          font-size: 18px;
+          text-align: center;
+        }
+
+        p {
+          margin-bottom: -15px;
+        }
+
+        span {
+          position: absolute;
+        }
+      }
+      ul {
+        list-style: none;
+        li {
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+
+          p {
+            margin-left: 35px;
+          }
+
+          span {
+            position: absolute;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .education-info {
+      .education-description {
+        margin: 15px 0;
+
+        span {
+          font-weight: 800;
+        }
+      }
+    }
+
+    .skills-info {
+      width: 100%;
+
+      ul {
+        margin-top: 10px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          position: relative;
+          margin: 3px 0;
+          text-align: center;
+
+          span {
+            position: absolute;
+            font-size: 20px;
+            margin-left: 10px;
+          }
+        }
+
+        li:last-child {
+          span {
+            font-size: 30px;
+            top: 0;
+            right: -20px;
+          }
+        }
+      }
+    }
+  }
+
+  .rigth-container {
+    width: 485px;
+    height: 1127px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid rgba(179, 179, 179, 0.74);
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 440px;
+      height: 215px;
+      background-color: #3a3838;
+      color: white;
+
+      span {
+        margin-top: 1rem;
+        font-size: 34px;
+        border-radius: 50%;
+        background-color: #646464;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1px;
+      }
+
+      h1 {
+        margin: 15px 0;
+        text-decoration: underline;
+      }
+    }
+
+    .sub-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5px;
+      color: white;
+      width: 440px;
+      height: 45px;
+      background-color: #3a3838;
+    }
+
+    .me-description {
+      width: 440px;
+
+      p {
+        text-indent: 1.5em;
+        margin-top: 15px;
+        text-align: justify;
+        padding: 0 1.5rem;
+      }
+    }
+    .separator {
+      width: 440px;
+      height: 3px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      hr {
+        margin-top: 25px;
+        height: 3px;
+        background-color: rgba(201, 197, 197, 0.74);
+        width: 440px;
+      }
+
+      span {
+        top: -3px;
+        font-size: 34px;
+        position: absolute;
+        background-color: white;
+      }
+    }
+
+    .portfolio {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
