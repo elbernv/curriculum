@@ -11,6 +11,7 @@ html {
 body {
   display: flex;
   justify-content: center;
+  background-color: #494949;
 }
 
 .cv-container {
@@ -191,6 +192,34 @@ body {
 .cv-container .rigth-container .portfolio {
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+.cv-container .rigth-container .portfolio h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.cv-container .rigth-container .portfolio span {
+  font-size: 24px;
+  color: #2e85e7;
+  font-weight: 800;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cv-container .rigth-container .work-experience {
+  margin-top: 33px;
+  height: 540px;
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cv-container .rigth-container .work-experience .work-experience-content {
+  width: 440px;
+  border: 1px solid red;
+  height: 169px;
+}
+.cv-container .rigth-container .work-experience .work-experience-content:first-of-type {
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=index.css.map */
