@@ -11,15 +11,89 @@ html {
 body {
   display: flex;
   justify-content: center;
-  background-color: #494949;
+  background-color: rgb(73, 73, 73);
 }
 
 .cv-container {
+  position: relative;
   display: flex;
   width: 800px;
   height: 1127px;
   max-height: 1127px;
   background: white;
+}
+.cv-container .download-btn {
+  position: absolute;
+  right: -150px;
+  /*a:before{transform:translate(-30%,-60%);}*/
+}
+.cv-container .download-btn a {
+  background: #ffffff;
+  border: solid 1px #e6e6e6;
+  border-radius: 2px;
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  margin: 5px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 100px;
+}
+.cv-container .download-btn a span {
+  background: #f2594b;
+  border-radius: 4px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 5px 10px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.cv-container .download-btn a span:last-child {
+  margin-left: -20px;
+}
+.cv-container .download-btn a:before,
+.cv-container .download-btn a:after {
+  background: #ffffff;
+  border: solid 3px #9fb4cc;
+  border-radius: 4px;
+  content: "";
+  display: block;
+  height: 35px;
+  left: 50%;
+  margin: -17px 0 0 -12px;
+  position: absolute;
+  top: 50%;
+  /*transform:translate(-50%,-50%);*/
+  width: 25px;
+}
+.cv-container .download-btn a:hover:before,
+.cv-container .download-btn a:hover:after {
+  background: #e2e8f0;
+}
+.cv-container .download-btn a:before {
+  margin: -23px 0 0 -5px;
+}
+.cv-container .download-btn a:hover {
+  background: #e2e8f0;
+  border-color: #9fb4cc;
+}
+.cv-container .download-btn a:active {
+  background: #dae0e8;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+.cv-container .download-btn a span:first-child {
+  display: none;
+}
+.cv-container .download-btn a:hover span:first-child {
+  display: inline-block;
+}
+.cv-container .download-btn a:hover span:last-child {
+  display: none;
 }
 .cv-container .left-container {
   width: 315px;
@@ -47,7 +121,6 @@ body {
   justify-content: center;
 }
 .cv-container .left-container .photo img {
-  width: 68%;
   height: 100%;
 }
 .cv-container .left-container .contact-info {
@@ -200,7 +273,7 @@ body {
 }
 .cv-container .rigth-container .portfolio span {
   font-size: 24px;
-  color: #2e85e7;
+  color: rgb(46, 133, 231);
   font-weight: 800;
   text-decoration: underline;
   cursor: pointer;
@@ -215,11 +288,12 @@ body {
 }
 .cv-container .rigth-container .work-experience h3 {
   margin-top: 15px;
+  margin-bottom: 40px;
   font-size: 25px;
 }
 .cv-container .rigth-container .work-experience .work-experience-content {
   width: 440px;
-  height: 169px;
+  height: 100px;
 }
 .cv-container .rigth-container .work-experience .work-experience-content h4 {
   text-align: center;
@@ -237,7 +311,7 @@ body {
   font-size: 16px;
 }
 .cv-container .rigth-container .work-experience .work-experience-content:first-of-type {
-  margin-top: 35px;
+  margin-bottom: 20px;
 }
 .cv-container .rigth-container .work-experience .work-experience-content:nth-of-type(2) {
   margin-top: -20px;
