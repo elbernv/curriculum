@@ -8,7 +8,9 @@ const port = 3000;
 app.get("/download-pdf", async (req, res) => {
   const pdfName = "Elber-Nava-2023.pdf";
   const url = `${config.frontUrl}/index.html?download=true`;
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
   const page = await browser.newPage();
   await page.goto(url, {
     waitUntil: "networkidle2",
